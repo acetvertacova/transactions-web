@@ -1,11 +1,11 @@
-## INDIVIDUAL WORK NR 3
+# INDIVIDUAL WORK NR 3
 
-# Project's summary 
+## Project's summary 
 The Transaction Manager is a web application designed to help users manage their financial transactions. 
 Users can input transaction details such as ID, date, amount, category, and description using a form provided on the webpage. 
 Upon submission, the transaction details are displayed in a table, where each row represents a transaction.
 
-# How the project works
+## How the project works
 Adding Transactions:
     - Users can fill out a form with details about a new transaction, including ID, date, amount, category, and description.
     
@@ -100,7 +100,7 @@ Viewing Transaction Details:
 
 Whenever a new transaction is added or an existing one is deleted, the total amount is automatically recalculated and displayed on the page.
 
-# Control questions
+## Control questions
 - How to access an element on a web using JS
     getElementById(id)
     querySelectorAll
@@ -117,7 +117,7 @@ Whenever a new transaction is added or an existing one is deleted, the total amo
     appendChild
     insertRow
 
-# Sources 
+## Sources 
 https://www.w3schools.com/jsref/met_table_deleterow.asp
 https://www.w3schools.com/jsref/prop_tablerow_rowindex.asp
 https://developer.mozilla.org/ru/docs/Web/API/Event/target
