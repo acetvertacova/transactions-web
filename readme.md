@@ -9,7 +9,6 @@ Upon submission, the transaction details are displayed in a table, where each ro
 Adding Transactions:
     - Users can fill out a form with details about a new transaction, including ID, date, amount, category, and description.
     
-    ```
     let form = document.getElementById("transactionForm");
 
     form.addEventListener("submit", function (event) {
