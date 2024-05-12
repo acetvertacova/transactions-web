@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style src="style.css"></style>
+</head>
+<body>
+
+    <form id="transactionForm">
+        <label for="id">Transaction ID:</label>
+        <input type="text" id="id" name="id" required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount" required><br><br>
+        <label for="category">Category:</label>
+         <select id="category" name="transactionType">
+            <option value="needs">Needs</option>
+            <option value="wants">Wants</option>
+            <option value="savings">Savings</option>
+          </select><br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br><br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <br>
+      
+    <table border = 1 id = "table">
+        <tr>
+            <th>ID</th>
+            <th>Date and time</th>
+            <th>Transaction's categories</th>
+            <th>Summary</th>
+            <th>Delete</th>
+            <th>Display</th>
+        </tr>
+    </table>
+
+    <br>
+    <div id="summary"></div>
+    <div id="totalSum"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
