@@ -32,10 +32,8 @@ Adding Transactions:
             return 0;
         }  
     
-
     - After filling out the form and clicking the "Submit" button, the new transaction is added to a table on the page.
 
-    ```
     let row = table.insertRow(-1);
         let cell1 = row.insertCell(0);
         let cell2 = row.insertCell(1);
@@ -56,12 +54,11 @@ Adding Transactions:
         cell4.innerHTML = newTransaction.description.split(' ').slice(0, 4).join(' ');;
         cell5.innerHTML = '<button>Delete</button>';
         cell6.innerHTML = '<button>Display</button>'
-    ```
+    
 Deleting Transactions:
 
     - Users have the option to delete a transaction from the table by clicking the "Delete" button in the corresponding row.
 
-    ```
     cell5.querySelector('button').addEventListener('click', function (event) {
             let row = event.target.parentNode.parentNode;
             let index = row.rowIndex;
@@ -71,23 +68,23 @@ Deleting Transactions:
             updateSummary();
         });
         calculateTotal();
-    ```
+    
     - Once a transaction is deleted, it is removed from the table, and the total amount is automatically recalculated.
 
 Viewing Transaction Details:
 
     - Users can view detailed information about a transaction by clicking the "Display" button in the corresponding row.
-    ```
+    
     cell6.querySelector('button').addEventListener('click', function (event) {
             let row = event.target.parentNode.parentNode;
             let index = row.rowIndex;
             let summary = transactions[index - 1].description;
             document.getElementById('summary').textContent = "Transaction's description: " + summary;
         });
-    ```
+    
     Updating the Total Amount:
 
-    ```
+    
     function calculateTotal() {
     let total = transactions.reduce((accumulator, currentTransaction) => {
         return accumulator + currentTransaction.amount;
@@ -95,7 +92,7 @@ Viewing Transaction Details:
 
     document.getElementById('totalSum').textContent = "Total amount: " + total + ' m.u';
     }
-    ```
+    
 
 Whenever a new transaction is added or an existing one is deleted, the total amount is automatically recalculated and displayed on the page.
 
