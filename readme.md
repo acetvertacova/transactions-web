@@ -32,7 +32,7 @@ Adding Transactions:
             alert("Pay attention, please! Here you need to write some text :)");
             return 0;
         }  
-    ```
+    
 
     - After filling out the form and clicking the "Submit" button, the new transaction is added to a table on the page.
 
