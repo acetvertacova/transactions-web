@@ -67,7 +67,7 @@ Deleting Transactions:
             calculateTotal();
             updateSummary();
         });
-        calculateTotal();```
+        calculateTotal();
     
     - Once a transaction is deleted, it is removed from the table, and the total amount is automatically recalculated.
 
